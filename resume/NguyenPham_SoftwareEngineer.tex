@@ -1,0 +1,132 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Updated for: Nguyen (Daniel) Pham
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{xcolor}
+\usepackage{lmodern}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[3]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1 - #2} & \textit{\small #3} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeItemListStart}{\begin{itemize}[label={-}]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+
+\begin{document}
+
+\begin{center}
+    \textbf{\Huge \scshape {Nguyen (Daniel) Pham}} \\ \vspace{1pt}
+    \small US Citizen $|$ +1 704-807-1827 $|$ \href{mailto:nguyenpham121998@gmail.com}{\underline{nguyenpham121998@gmail.com}} $|$
+    \href{https://www.linkedin.com/in/pavukanez}{\underline{linkedin.com/in/pavukanez}} $|$
+    \href{https://github.com/pavukanez}{\underline{github.com/pavukanez}}
+\end{center}
+
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Cisco Systems}{Software Engineer}{Jun 2024 -- May 2026}
+        \resumeItemListStart
+            \resumeItem{Managed on-call rotations for 14 internal \textbf{OpenShift} clusters, performing incident response and troubleshooting to maintain infrastructure availability and ensure high system reliability.}
+            \resumeItem{Built \textbf{LangGraph} AI agents to assist on-calls by investigating live alerts and executing diagnostic commands, generating RCA documentation to reduce manual investigation time by 65\%.}
+            \resumeItem{Developed and launched time-series \textbf{ML} models on \textbf{OpenShift AI} to detect cross-cluster anomalies and configuration bugs, improving system-wide proactive incident detection.}
+            \resumeItem{Optimized \textbf{Jenkins} pipelines using a dual-layer (\textbf{Docker} base/app) build strategy, eliminating redundant package installations and accelerating CI/CD execution speeds by 50\%.}
+            \resumeItem{Led vulnerability remediation for 10+ core repositories using \textbf{SonarQube} and \textbf{Corona} (SAST/SCA), achieving a 100\% resolution rate of high-severity security flaws.}
+        \resumeItemListEnd
+
+    \resumeSubheading
+      {Amazon Web Services}{Software Development Engineer Intern}{May -- Aug 2023}
+        \resumeItemListStart
+            \resumeItem{Launched a \textbf{LangChain} and \textbf{React} QA chatbot allowing teams to "talk" to internal code documentation, significantly reducing manual reading time via secure \textbf{Lambda} and \textbf{API Gateway}.}
+            \resumeItem{Engineered a \textbf{RAG} pipeline to ingest documents from \textbf{S3} into a \textbf{Chroma} vector database, enabling efficient semantic retrieval and automated context injection for Large Language Model queries.}
+        \resumeItemListEnd
+
+    \resumeSubheading
+      {220C Banh Mi \& Coffee}{Software Developer}{Mar 2021 -- Sep 2022}
+      \resumeItemListStart
+        \resumeItem{Architected and deployed a full-stack web application for online food ordering using \textbf{React}, \textbf{Express}, and \textbf{Node.js}, raising monthly transactions by 15\% and expanding digital reach.}
+        \resumeItem{Integrated \textbf{Stripe API} for secure payment processing and implemented real-time \textbf{MongoDB} data synchronization, leading to a 30\% improvement in user engagement and customer retention.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {TIAA}{Technology Intern}{Jun -- Aug 2022}
+      \resumeItemListStart
+        \resumeItem{Developed a \textbf{Django} survey platform to collect team requirements, utilizing an \textbf{NLP} engine to match survey responses with a knowledge base of optimal data analytics tools.}
+        \resumeItem{Engineered custom web scrapers with \textbf{Selenium} to aggregate data from diverse technical resources, building the comprehensive knowledge base used for automated tool recommendations.}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Novozymes}{Data Science Student Helper}{Feb -- Dec 2022}
+      \resumeItemListStart
+        \resumeItem{Optimized codebase efficiency by developing reusable \textbf{Django} UI components, eliminating code duplication and centralizing maintenance across multiple internal applications.}
+        \resumeItem{Improved software reliability by implementing automated unit tests and integrating them into \textbf{GitLab CI/CD} pipelines, significantly reducing debugging time and manual oversight.}
+    \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+\section{Technical Skills}
+ \resumeItemListStart
+    \resumeItem{Python, Java, JS, React, Node, Express, LangChain, LangGraph, Flask, Django, Spring Boot}
+    \resumeItem{AWS, OpenShift, Docker, Kubernetes, Jenkins, GitLab, Argo CD, CI/CD, SQL, MongoDB, PostgreSQL}
+    \resumeItem{Grafana, Postman, SonarQube, SAST, SCA, Corona, Firebase, Podman, Microservices, MLOps, Git}
+  \resumeItemListEnd
+\vspace{-7pt}
+
+\section{Certifications}
+ \resumeItemListStart
+    \resumeItem{Certified Kubernetes Application Developer (CKAD) \hfill Jul 2025 -- Jul 2027}
+  \resumeItemListEnd
+\vspace{-7pt}
+
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of North Carolina at Charlotte}{Bachelor of Science in Computer Science}{}
+  \resumeSubHeadingListEnd
+
+\end{document}
