@@ -1,5 +1,4 @@
 import { createRequire } from "node:module";
-import { copyFile, mkdir } from "node:fs/promises";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 
@@ -9,7 +8,6 @@ const { compile } = require("node-tectonic");
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 const texFile = join(root, "resume/NguyenPham_SoftwareEngineer.tex");
 const resumeDir = join(root, "resume");
-const publicDir = join(root, "public");
 const pdfName = "NguyenPham_SoftwareEngineer.pdf";
 
 const result = await compile({
@@ -25,6 +23,4 @@ if (!result.success) {
   process.exit(1);
 }
 
-await mkdir(publicDir, { recursive: true });
-await copyFile(join(resumeDir, pdfName), join(publicDir, pdfName));
-console.log(`Wrote public/${pdfName}`);
+console.log(`Compiled ${pdfName} in resume/`);
