@@ -6,5 +6,3 @@ dist
 *.out
 *.synctex.gz
 .vite
-resume/*.pdf
-public/*.pdf
