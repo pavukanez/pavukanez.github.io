@@ -8,8 +8,3 @@ React + Tailwind site for [pavukanez.github.io](https://pavukanez.github.io/).
 npm install
 npm run dev
 ```
-
-## Compile Latex resume into PDF
-```
-node scripts/compile-resume.mjs
-```
