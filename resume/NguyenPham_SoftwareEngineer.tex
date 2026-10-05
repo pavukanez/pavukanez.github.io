@@ -21,7 +21,7 @@
 \usepackage{lmodern}
 
 \pagestyle{fancy}
-\fancyhf{}
+\fancyhf{} 
 \fancyfoot{}
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
@@ -37,79 +37,99 @@
 \raggedright
 \setlength{\tabcolsep}{0in}
 
+% Sections formatting
 \titleformat{\section}{
   \vspace{-4pt}\scshape\raggedright\large
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
+% Custom commands
 \newcommand{\resumeItem}[1]{
   \item\small{
     {#1 \vspace{-2pt}}
   }
 }
 
-\newcommand{\resumeSubheading}[3]{
+% Format: **Company -- Title -- Location** on the left, Date on the right
+\newcommand{\resumeSubheading}[4]{
   \vspace{-2pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{#1 - #2} & \textit{\small #3} \\
+      \textbf{#1 -- #2 -- #3} & \textit{\small #4} \\
     \end{tabular*}\vspace{-7pt}
 }
 
+% Helper for Education (no location/date)
+\newcommand{\resumeEducationHeading}[2]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} -- #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+% Standardized list format using dashes
 \newcommand{\resumeItemListStart}{\begin{itemize}[label={-}]}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \begin{document}
 
+%----------HEADING----------
 \begin{center}
-  \textbf{\Huge \scshape {Nguyen (Daniel) Pham}} \\ \vspace{1pt}
-  \small US Citizen $|$ 704-807-1827 $|$ \href{mailto:nguyenpham121998@gmail.com}{\underline{nguyenpham121998@gmail.com}} $|$
-  \href{https://www.linkedin.com/in/pavukanez}{\underline{linkedin.com/in/pavukanez}} $|$
-  \href{https://pavukanez.github.io}{\underline{pavukanez.github.io}}
+  \textbf{\Huge \scshape {Nguyen (Daniel) Pham}} \\ \vspace{2pt}
+  \small US Citizen $|$ 704-807-1827 $|$ 
+  \href{mailto:nguyenpham121998@gmail.com}{\underline{nguyenpham121998@gmail.com}} $|$ 
+  \href{linkedin.com/in/pavukanez}{\underline{linkedin.com/in/pavukanez}} $|$ 
+  \href{github.com/pavukanez}{\underline{github.com/pavukanez}}
+  % \href{pavukanez.github.io}{\underline{pavukanez.github.io}}
 \end{center}
 
 
+%-----------EXPERIENCE-----------
 \section{Experience}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {Cisco Systems}{Software Engineer}{Jun 2024 -- May 2026}
-        \resumeItemListStart
+      {Cisco}{Software Engineer}{Research Triangle Park, NC}{Jun 2024 -- Jul 2026}
+        \resumeItemListStart 
             \resumeItem{Managed on-call rotations for 14 internal \textbf{OpenShift} clusters, performing incident response and troubleshooting to maintain infrastructure availability and ensure high system reliability.}
             \resumeItem{Built \textbf{LangGraph} AI agents to assist on-calls by investigating live alerts and executing diagnostic commands, generating RCA documentation to reduce manual investigation time by 65\%.}
-            \resumeItem{Developed and launched time-series \textbf{ML} models on \textbf{OpenShift AI} to detect cross-cluster anomalies and configuration bugs, improving system-wide proactive incident detection.}
+            \resumeItem{Developed and launched time-series \textbf{ML} models on \textbf{OpenShift AI} using data sourced from \textbf{Grafana} to detect cross-cluster anomalies and configuration bugs, improving system-wide proactive incident detection.}
             \resumeItem{Optimized \textbf{Jenkins} pipelines using a dual-layer (\textbf{Docker} base/app) build strategy, eliminating redundant package installations and accelerating CI/CD execution speeds by 50\%.}
             \resumeItem{Led vulnerability remediation for 10+ core repositories using \textbf{SonarQube} and \textbf{Corona} (SAST/SCA), achieving a 100\% resolution rate of high-severity security flaws.}
         \resumeItemListEnd
 
     \resumeSubheading
-      {Amazon Web Services}{Software Engineer Intern}{May -- Aug 2023}
-        \resumeItemListStart
-            \resumeItem{Launched a \textbf{LangChain} and \textbf{React} QA chatbot allowing teams to "talk" to internal code documentation, significantly reducing manual reading time via secure \textbf{Lambda} and \textbf{API Gateway}.}
+      {Amazon Web Services}{Software Engineer Intern}{Seattle, WA}{May 2023 -- Aug 2023}
+        \resumeItemListStart 
+            \resumeItem{Developed a generative AI chatbot using \textbf{LangChain} and \textbf{React} on \textbf{AWS Lambda}, enabling \textbf{semantic search} to eliminate manual document lookup and accelerate knowledge retrieval.}
             \resumeItem{Engineered a \textbf{RAG} pipeline to ingest documents from \textbf{S3} into a \textbf{Chroma} vector database, enabling efficient semantic retrieval and automated context injection for Large Language Model queries.}
         \resumeItemListEnd
 
     \resumeSubheading
-      {220C Banh Mi \& Coffee}{Software Engineer}{Mar 2021 -- Sep 2022}
+      {220C Banh Mi \& Coffee}{Software Engineer}{Charlotte, NC}{Mar 2021 -- Sep 2022}
       \resumeItemListStart
         \resumeItem{Architected and deployed a full-stack web application for online food ordering using \textbf{React}, \textbf{Express}, and \textbf{Node.js}, raising monthly transactions by 15\% and expanding digital reach.}
         \resumeItem{Integrated \textbf{Stripe API} for secure payment processing and implemented real-time \textbf{MongoDB} data synchronization, leading to a 30\% improvement in user engagement and customer retention.}
       \resumeItemListEnd
 
     \resumeSubheading
-      {TIAA}{Software Engineer Intern}{Jun -- Aug 2022}
+      {TIAA}{Software Engineer Intern}{Charlotte, NC}{Jun 2022 -- Aug 2022}
       \resumeItemListStart
         \resumeItem{Developed a \textbf{Django} survey platform to collect team requirements, utilizing an \textbf{NLP} engine to match survey responses with a knowledge base of optimal data analytics tools.}
         \resumeItem{Engineered custom web scrapers with \textbf{Selenium} to aggregate data from diverse technical resources, building the comprehensive knowledge base used for automated tool recommendations.}
     \resumeItemListEnd
-
+    
     \resumeSubheading
-      {Novozymes}{Software Engineer Intern}{Feb -- Dec 2022}
+      {Novozymes}{Software Engineer Intern}{Research Triangle Park, NC}{Feb 2022 -- Dec 2022}
       \resumeItemListStart
         \resumeItem{Optimized codebase efficiency by developing reusable \textbf{Django} UI components, eliminating code duplication and centralizing maintenance across multiple internal applications.}
         \resumeItem{Improved software reliability by implementing automated unit tests and integrating them into \textbf{GitLab CI/CD} pipelines, significantly reducing debugging time and manual oversight.}
     \resumeItemListEnd
   \resumeSubHeadingListEnd
 
+%-----------TECHNICAL SKILLS-----------
 \section{Technical Skills}
  \resumeItemListStart
     \resumeItem{Python, Java, JS, React, Node, Express, LangChain, LangGraph, Flask, Django, Spring Boot}
@@ -118,16 +138,18 @@
   \resumeItemListEnd
 \vspace{-7pt}
 
+%-----------CERTIFICATIONS-----------
 \section{Certifications}
  \resumeItemListStart
     \resumeItem{Certified Kubernetes Application Developer (CKAD) \hfill Jul 2025 -- Jul 2027}
   \resumeItemListEnd
 \vspace{-7pt}
 
+%-----------EDUCATION-----------
 \section{Education}
   \resumeSubHeadingListStart
-    \resumeSubheading
-      {University of North Carolina at Charlotte}{Bachelor of Science in Computer Science}{}
+    \resumeEducationHeading
+      {University of North Carolina at Charlotte}{Bachelor of Science in Computer Science}
   \resumeSubHeadingListEnd
 
 \end{document}
