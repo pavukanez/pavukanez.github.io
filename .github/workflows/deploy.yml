@@ -6,6 +6,7 @@ on:
     paths:
       - 'src/**'
       - 'public/**'
+      - 'resume/**'
       - 'package.json'
       - 'package-lock.json'
   workflow_dispatch:
