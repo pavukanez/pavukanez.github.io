@@ -40,8 +40,10 @@ export const EXPERIENCE = [
     dates: "Mar 2021 — Sep 2022",
     logo: "banhmi",
     highlights: [
-      "Boosted monthly online orders by 15% with a full-stack React and Node.js web app from scratch.",
-      "Integrated Stripe payments and real-time MongoDB sync to drive a 30% jump in retention.",
+    "Boosted monthly online orders by 15% with a full-stack React and Node.js web app from scratch.",
+    "Integrated Stripe payments and real-time MongoDB sync to drive a 30% jump in retention.",
+    "Maintained 99.9% uptime by deploying the backend on Heroku, frontend on Netlify, and managing daily production monitoring.",
+    "Built automated SMS notification system using Stripe webhooks and the Gmail API to instantly text new orders to kitchen staff."
     ],
   },
   {
