@@ -4,6 +4,8 @@ dist
 *.aux
 *.log
 *.out
+*.fls
+*.fdb_latexmk
 *.synctex.gz
 .vite
-public/*.pdf
+
