@@ -3,12 +3,6 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches: ["main"]
-    paths:
-      - 'src/**'
-      - 'public/**'
-      - 'resume/**'
-      - 'package.json'
-      - 'package-lock.json'
   workflow_dispatch:
 
 permissions:
