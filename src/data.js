@@ -23,7 +23,7 @@ export const EXPERIENCE = [
   {
     id: "aws",
     company: "Amazon Web Services",
-    title: "Software Development Engineer Intern",
+    title: "Software Engineer Intern",
     location: "Seattle, WA",
     dates: "May 2023 — Aug 2023",
     logo: "aws",
@@ -47,7 +47,7 @@ export const EXPERIENCE = [
   {
     id: "tiaa",
     company: "TIAA",
-    title: "Technology Intern",
+    title: "Software Engineer Intern",
     location: "Charlotte, NC",
     dates: "Jun 2022 — Aug 2022",
     logo: "tiaa",
@@ -59,8 +59,8 @@ export const EXPERIENCE = [
   {
     id: "novozymes",
     company: "Novozymes",
-    title: "Data Science Student Helper",
-    location: "Franklinton, NC",
+    title: "Software Engineer Intern",
+    location: "Research Triangle Park, NC",
     dates: "Feb 2022 — Dec 2022",
     logo: "novozymes",
     highlights: [
