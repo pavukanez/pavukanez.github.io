@@ -6,3 +6,4 @@ dist
 *.out
 *.synctex.gz
 .vite
+public/*.pdf
