@@ -7,12 +7,12 @@ const { compile } = require("node-tectonic");
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 const texFile = join(root, "resume/NguyenPham_SoftwareEngineer.tex");
-const resumeDir = join(root, "resume");
+const publicDir = join(root, "public");
 const pdfName = "NguyenPham_SoftwareEngineer.pdf";
 
 const result = await compile({
   texFile,
-  outputDir: resumeDir,
+  outputDir: publicDir,
   timeout: 180_000,
   onStdout: (chunk) => process.stdout.write(chunk),
   onStderr: (chunk) => process.stderr.write(chunk),
@@ -23,4 +23,4 @@ if (!result.success) {
   process.exit(1);
 }
 
-console.log(`Compiled ${pdfName} in resume/`);
+console.log(`Compiled ${pdfName} in public/`);
