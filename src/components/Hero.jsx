@@ -16,13 +16,13 @@ export default function Hero() {
 
       <div className="flex flex-col items-start">
         <p className="text-xs font-medium uppercase tracking-[0.28em] text-brass">
-          Backend · Cloud infra
+          Backend • Cloud infra
         </p>
         <h1 className="mt-4 font-display text-4xl leading-[1.1] text-paper sm:text-5xl lg:text-6xl">
           Hello I&apos;m Daniel Pham
         </h1>
         <p className="mt-6 max-w-xl text-base leading-relaxed text-muted sm:text-lg">
-          Software engineer with 2+ YOE, specialize in backend development and
+          Software engineer with 3+ YOE, specialize in backend development and
           cloud infra, previously at Cisco, AWS, Novozymes, TIAA
         </p>
 

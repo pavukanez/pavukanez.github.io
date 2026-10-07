@@ -33,7 +33,7 @@ export default function Skills() {
           <div>
             <p className="text-xs uppercase tracking-[0.2em] text-brass">
               {meta.label}
-              <span className="text-muted"> · {active.name}</span>
+              <span className="text-muted"> • {active.name}</span>
             </p>
             <p className="mt-2 text-sm leading-relaxed text-paper/90">
               {meta.blurb}

@@ -38,7 +38,7 @@ export default function Experience() {
                     {job.company}
                   </h3>
                   <p className="mt-1 text-sm text-muted">
-                    {job.title} · {job.location}
+                    {job.title} • {job.location}
                   </p>
                   <ul
                     className={`mt-4 space-y-3 text-sm leading-relaxed text-paper/85 ${
