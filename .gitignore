@@ -8,4 +8,5 @@ dist
 *.fdb_latexmk
 *.synctex.gz
 .vite
+resume/*.pdf
 
